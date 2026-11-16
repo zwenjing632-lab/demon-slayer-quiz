@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#211719">
+  <meta name="description" content="15道日常情境题，测测你的性格更接近哪位鬼灭之刃角色。">
+  <title>测测你是《鬼灭之刃》里的谁？</title>
+  <style>
+    :root{--ink:#281d1f;--muted:#776d6c;--paper:#faf6ef;--paper2:#fffdf8;--red:#bd3a3d;--red2:#e46a4d;--gold:#d6ad65;--green:#527666;--wisteria:#9b83ae;--line:#e9ded4;--shadow:0 18px 44px rgba(46,25,27,.13)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7;background:radial-gradient(ellipse at 10% 0%,#fff 0,#faf6ef 38rem,#f4eee8 100%)}button{font:inherit}.wrap{width:min(100% - 24px,760px);margin:0 auto;padding:18px 0 42px}.top{display:flex;justify-content:space-between;align-items:center;padding:4px 4px 13px}.brand{font-weight:900;letter-spacing:.08em;color:#392326}.brand em{color:var(--red);font-style:normal}.badge{font-size:12px;font-weight:700;color:#744145;background:#f6e9e4;border:1px solid #ead0c6;border-radius:99px;padding:5px 11px}
+    .hero{overflow:hidden;border-radius:24px;background:#211719;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.8)}.cover-wrap{position:relative}.cover{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 34%;background:#211719}.cover-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,14,17,.52) 0%,transparent 32%,transparent 70%,rgba(20,12,14,.24) 100%);pointer-events:none}.cover-tag{position:absolute;top:18px;left:18px;color:#fff4e4;font-size:12px;letter-spacing:.16em;font-weight:800;text-shadow:0 2px 8px #1d1014}.intro{padding:22px 22px 25px;background:linear-gradient(135deg,#fffdf8,#f5eee6)}.eyebrow{font-size:12px;font-weight:900;letter-spacing:.14em;color:var(--red);text-transform:uppercase}.intro h1{font-size:clamp(24px,6vw,34px);line-height:1.3;margin:6px 0 10px;color:#352125}.lead{margin:0;color:#66595a}.quote{margin:18px 0;padding:14px 16px;border-left:4px solid var(--red);border-radius:0 14px 14px 0;background:#f5ebe3;color:#633b3c;font-weight:750}.quote small{display:block;font-weight:500;color:#8c7774;font-size:12px;margin-top:5px}.facts{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0 19px}.facts span{padding:6px 10px;border-radius:99px;background:#eee9e2;color:#5d4e4b;font-size:13px}.btn{border:0;border-radius:14px;padding:14px 18px;font-weight:850;cursor:pointer;transition:transform .15s}.btn:active{transform:scale(.985)}.btn-primary{width:100%;color:white;background:linear-gradient(100deg,#be343c,#de6148);box-shadow:0 8px 20px rgba(171,47,52,.22)}.btn-secondary{background:#fff;color:#4c3435;border:1px solid #e2d5cb}.note{text-align:center;font-size:12px;color:var(--muted);margin:11px 0 0}
+    .panel{margin-top:17px;padding:21px;border:1px solid rgba(255,255,255,.9);border-radius:22px;background:rgba(255,253,248,.96);box-shadow:var(--shadow)}.hidden{display:none!important}.progress-head{display:flex;justify-content:space-between;font-weight:750;font-size:13px;color:#78696a}.progress{height:8px;border-radius:99px;background:#ece4dc;overflow:hidden;margin:10px 0 22px}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,#d6ad65,#be3840);border-radius:99px;transition:width .25s}.q-title{font-size:22px;line-height:1.45;color:#382427;margin:0 0 17px}.options{display:grid;gap:10px}.option{width:100%;text-align:left;background:white;border:1px solid #e8ded7;border-radius:14px;padding:13px 15px;color:#443638;line-height:1.55;cursor:pointer}.option:hover,.option:focus-visible{outline:none;border-color:#c65a52;background:#fff8f1}.option b{color:var(--red);margin-right:8px}.q-controls{display:flex;justify-content:space-between;margin-top:18px}.text-btn{border:0;background:transparent;color:#796c6a;padding:8px 3px;cursor:pointer}.text-btn:disabled{opacity:.4;cursor:default}
+    .result-top{border-radius:19px;padding:21px;background:linear-gradient(135deg,#f5e7d4,#e8eeea 57%,#ede6f0);text-align:center;border:1px solid rgba(255,255,255,.9)}.result-kicker{font-size:13px;font-weight:850;letter-spacing:.12em;color:var(--red)}.result-name{font-size:34px;line-height:1.2;color:#352125;margin:7px 0}.result-type{margin:0;color:#736567}.quote-result{margin:14px auto 0;padding:12px 14px;max-width:530px;border-radius:14px;background:rgba(255,255,255,.86);color:#9f3439;font-weight:800}.quote-result small{display:block;color:#877979;font-size:11px;font-weight:500;margin-top:4px}.result-intro{color:#5f5353;margin:17px 2px}.section-title{font-size:18px;color:#382427;margin:22px 0 12px}.scores{display:grid;gap:11px}.score-row{display:grid;grid-template-columns:76px 1fr 40px;gap:9px;align-items:center;font-size:13px}.score-name{font-weight:750;color:#66595a}.track{height:10px;background:#eee7e1;border-radius:99px;overflow:hidden}.track i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#d8b66f,#c34743)}.score-val{text-align:right;color:#75696a;font-variant-numeric:tabular-nums}.analysis-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.analysis-card{padding:15px;border-radius:15px;background:#fff;border:1px solid #eee5dd}.analysis-card b{display:block;color:#443034;font-size:14px;margin-bottom:5px}.analysis-card p{margin:0;color:#706465;font-size:13px}.advice{padding:16px 18px;border-radius:16px;background:#f7eee6;border:1px solid #ead9c8;color:#544648}.advice ul{padding-left:20px;margin:8px 0 0}.advice li{padding:3px 0}.result-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.fineprint{text-align:center;color:#8c8180;font-size:11px;margin:18px 4px 0}.footer{text-align:center;font-size:12px;color:#8a7d7b;margin:18px 0 0}.footer span{color:var(--red)}
+    @media(min-width:700px){.wrap{padding-top:26px}.hero{display:grid;grid-template-columns:.9fr 1fr}.cover{height:100%;min-height:560px;aspect-ratio:auto;object-position:center}.intro{padding:32px;display:flex;flex-direction:column;justify-content:center}.panel{padding:28px}.q-title{font-size:25px}.analysis-grid{gap:14px}}
+    @media(max-width:430px){.wrap{width:min(100% - 18px,760px);padding-top:11px}.panel{padding:17px}.intro{padding:19px 16px}.analysis-grid{grid-template-columns:1fr}.result-actions{grid-template-columns:1fr}.score-row{grid-template-columns:70px 1fr 34px;gap:7px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="top"><div class="brand">TAISHO <em>·</em> BREATH</div><div class="badge">大正夜色 · 粉丝向测试</div></header>
+    <section class="hero" id="welcome">
+      <div class="cover-wrap"><img class="cover" src="cover.png" alt="原创大正和风剑士群像封面"><div class="cover-shade"></div><div class="cover-tag">BREATHING STYLE · CHARACTER QUIZ</div></div>
+      <div class="intro">
+        <div class="eyebrow">DEMON SLAYER · PERSONALITY QUIZ</div>
+        <h1>测测你是《鬼灭之刃》里的谁？</h1>
+        <p class="lead">15道日常情境题，从行动力、共情力、冷静度和意志力四个角度，看看你的性格最接近哪位角色。</p>
+        <blockquote class="quote">“心里的火种不会熄灭，呼吸之间，自有前行的方向。”<small>一份原创测试寄语，不是作品原台词。</small></blockquote>
+        <div class="facts"><span>⏱ 约 2 分钟</span><span>🗡 15 道情境题</span><span>🌸 4 维度解析</span></div>
+        <button class="btn btn-primary" id="startBtn">开始测试</button>
+        <p class="note">凭第一直觉作答，没有标准答案。</p>
+      </div>
+    </section>
+    <section class="panel hidden" id="quiz" aria-live="polite">
+      <div class="progress-head"><span id="stageLabel">第 1 题</span><span id="progressNum">1 / 15</span></div><div class="progress"><i id="progressBar"></i></div>
+      <h2 class="q-title" id="questionText"></h2><div class="options" id="options"></div>
+      <div class="q-controls"><button class="text-btn" id="backBtn">← 上一题</button><button class="text-btn" id="quitBtn">返回介绍</button></div>
+    </section>
+    <section class="panel hidden" id="result" aria-live="polite">
+      <div class="result-top"><div class="result-kicker">你的性格最接近</div><h2 class="result-name" id="resultName"></h2><p class="result-type" id="resultType"></p><div class="quote-result" id="resultQuote"></div></div>
+      <p class="result-intro" id="resultIntro"></p>
+      <h3 class="section-title">你的四个侧面</h3><div class="scores" id="scores"></div>
+      <h3 class="section-title">多角度解析</h3><div class="analysis-grid" id="analysis"></div>
+      <h3 class="section-title">给你的练习建议</h3><div class="advice" id="advice"></div>
+      <div class="result-actions"><button class="btn btn-primary" id="shareBtn">分享我的结果</button><button class="btn btn-secondary" id="againBtn">再测一次</button></div>
+      <p class="fineprint">本页面为非官方粉丝向娱乐测试，不代表专业心理测评。角色及作品相关权利归原权利方所有。</p>
+    </section>
+    <footer class="footer">愿你心有所护，步履不停 <span>✦</span></footer>
+  </main>
+  <script>
+    const dims=["行动力","共情力","冷静度","意志力"];
+    const questions=[
+      {q:"遇到一个很想实现的目标，你通常会……",a:[["先行动起来，边走边调整",[3,1,0,2]],["找信任的人商量，一起推进",[1,3,1,2]],["先了解情况，想清楚步骤",[0,1,3,1]],["定下节奏后就坚持练下去",[1,1,1,3]]]},
+      {q:"朋友遇到困难却不愿开口，你会……",a:[["主动问问，陪他先做点实际的事",[2,3,0,2]],["耐心听他说，不急着给结论",[0,3,1,1]],["观察细节，判断他现在最需要什么",[0,2,3,1]],["之后持续关心，陪他慢慢走出来",[0,3,1,3]]]},
+      {q:"计划突然被打乱时，你更可能……",a:[["马上换条路继续前进",[3,0,1,2]],["先安顿好身边的人",[1,3,1,2]],["停下来重新判断局势",[0,1,3,1]],["不抱怨，按新计划做完",[1,1,1,3]]]},
+      {q:"压力很大、事情又很多时，你会……",a:[["挑最重要的先做，不让自己停住",[3,0,1,2]],["和伙伴分担，也听听彼此感受",[1,3,1,2]],["列清轻重缓急，再逐项处理",[0,1,3,2]],["提醒自己已经走过很多难关",[1,1,0,3]]]},
+      {q:"看到有人被误解或欺负，你会……",a:[["先站出来制止不公平的事",[3,2,0,2]],["先确认当事人想要什么帮助",[1,3,1,1]],["观察现场，找最稳妥的处理方式",[0,1,3,2]],["即使不擅长表达，也会留下来支持",[1,3,1,3]]]},
+      {q:"练习一件事很久仍没进步，你会……",a:[["换个方法，再试一次",[3,0,2,2]],["找人一起练，互相鼓励",[1,3,1,2]],["记录问题，分析哪里卡住",[0,1,3,1]],["继续按计划重复练习",[1,0,1,3]]]},
+      {q:"加入一个新团队，你通常会先……",a:[["主动接任务，尽快融入",[3,1,0,1]],["记住每个人的习惯，照顾气氛",[1,3,1,1]],["观察规则和大家的分工",[0,1,3,1]],["把自己的部分做好，让人慢慢信任你",[1,1,1,3]]]},
+      {q:"当重要的人和你意见相反时，你会……",a:[["坦白说出自己的立场",[3,1,0,1]],["先理解对方为什么这样想",[0,3,1,1]],["把事实和选择摆出来一起看",[0,1,3,1]],["即使不容易，也守住自己认定的事",[1,1,0,3]]]},
+      {q:"突发状况发生，周围的人都慌了，你会……",a:[["先行动，处理眼前最紧急的事",[3,1,0,2]],["先安抚大家，确认有没有人受伤",[1,3,1,2]],["快速观察，判断风险和出口",[0,1,3,2]],["稳住自己，带着大家一步步来",[1,2,1,3]]]},
+      {q:"别人低估你的时候，你更倾向于……",a:[["用行动让结果说话",[3,0,0,2]],["不把评价看得太重，做好自己",[1,1,2,2]],["先想想对方的判断从哪里来",[0,1,3,1]],["把这份不甘变成持续练习的动力",[1,0,1,3]]]},
+      {q:"你更适合怎样的练习方式？",a:[["高强度挑战，马上看到进展",[3,0,0,2]],["和伙伴互相提醒、共同完成",[1,3,1,2]],["先掌握技巧，再逐步增加难度",[0,1,3,1]],["规律重复，靠积累变得扎实",[1,0,1,3]]]},
+      {q:"朋友做了让你失望的事，你会……",a:[["直接说清楚，不把问题拖着",[3,1,0,1]],["先听听他的处境和想法",[0,3,1,1]],["想清楚事实，再决定要不要谈",[0,1,3,1]],["给彼此一点时间，但认真面对问题",[1,2,1,3]]]},
+      {q:"在团队里，你最自然的角色是……",a:[["冲在前面打开局面",[3,1,0,2]],["照顾大家、让人愿意互相帮助",[1,3,1,2]],["看清情况，提供冷静判断",[0,1,3,1]],["稳定推进，关键时刻不退缩",[1,1,1,3]]]},
+      {q:"一次努力没有得到想要的结果，你会……",a:[["马上找下一个机会",[3,0,0,2]],["和信任的人聊聊，再重新出发",[1,3,1,2]],["复盘原因，调整方法",[0,1,3,2]],["接受难过，但不轻易放弃目标",[1,1,0,3]]]},
+      {q:"如果必须选择一个信念陪你走下去，你会选……",a:[["遇到困难就再向前一步",[3,0,0,2]],["保护重要的人，也允许自己被帮助",[1,3,1,2]],["无论多混乱，都尽量看清事实",[0,1,3,1]],["跌倒之后还愿意重新站起来",[1,1,0,3]]]},
+    ];
+    const chars=[
+      {id:"tanjiro",name:"灶门炭治郎",type:"温柔坚定的守护者",p:[.78,.98,.69,.96],quote:"“无论多么痛苦，都要挺起胸膛。”",intro:"你的温柔不是软弱，而是看见他人痛苦后仍愿意伸手。你有很强的责任感，遇到重要的事会坚持到底；也要记得，照顾自己并不等于辜负别人。"},
+      {id:"nezuko",name:"灶门祢豆子",type:"安静而强韧的守护者",p:[.76,.94,.57,.99],quote:"“我会一直守护重要的人。”",intro:"你不一定把想法说得很多，却会用行动守住在意的人。遇到压力时，你的韧性会慢慢显现。给自己的情绪留一个出口，你的力量会更持久。"},
+      {id:"zenitsu",name:"我妻善逸",type:"敏感但会在关键时刻挺身而出",p:[.55,.9,.48,.88],quote:"“我会保护你！”",intro:"你比别人更容易察觉气氛变化，也可能因此想得很多。但当重要的人需要你时，你会拿出超出自己预期的勇气。别等到危急时才相信自己，平时的你也有力量。"},
+      {id:"inosuke",name:"嘴平伊之助",type:"直觉先行的突破者",p:[.98,.57,.43,.87],quote:"“冲啊！我才不会输！”",intro:"你精力旺盛，喜欢亲自尝试，遇到阻碍更容易被激起斗志。你的直接能带来行动力，也可能让伙伴跟不上节奏。停一秒听听他人的提醒，冲劲会更有效。"},
+      {id:"giyu",name:"富冈义勇",type:"沉着寡言的行动派",p:[.69,.57,.97,.87],quote:"“该做的事，我会做到。”",intro:"你习惯先处理问题，再谈自己的感受，因此常显得冷静可靠。你并不是不在乎，只是不太擅长表达。多说一句真实想法，会让伙伴更理解你，也让关系更轻松。"},
+      {id:"shinobu",name:"胡蝶忍",type:"笑容背后的清醒谋略家",p:[.68,.84,.98,.82],quote:"“保持微笑，也保持清醒。”",intro:"你善于观察细节，情绪越复杂时越能努力维持镇定。你会用聪明和礼貌保护自己，也可能把真正的疲惫藏起来。信任的人面前，不必时时表现得从容。"},
+      {id:"rengoku",name:"炼狱杏寿郎",type:"明亮热烈的鼓舞者",p:[.94,.92,.76,.98],quote:"“胸怀炽热，堂堂正正地前进！”",intro:"你相信行动，也愿意把热情传给身边的人。遇到挫折时，你会提醒自己继续向前。热心帮助别人时，也要留意自己的体力与边界，才能把光亮照得更久。"},
+      {id:"kanao",name:"栗花落香奈乎",type:"安静观察、逐渐学会选择的人",p:[.55,.72,.93,.79],quote:"“这一次，我想自己做决定。”",intro:"你观察敏锐，做决定前会认真权衡，也很少急着争抢注意力。随着经验累积，你会越来越清楚自己想要什么。试着从小选择开始练习，相信自己的判断。"},
+    ];
+    const adviceText={"行动力":"把想法拆成今天能完成的一小步，先开始，再根据结果调整。","共情力":"关心别人时也问问自己需要什么；表达边界不会减少你的温柔。","冷静度":"分析完给自己设一个行动时间，避免等到万事俱备才迈出第一步。","意志力":"把休息和求助纳入计划；可持续地前进，比一直硬撑更有力量。"};
+    let current=0,answers=Array(questions.length).fill(null),shownWinner=null;const $=id=>document.getElementById(id);
+    function show(which){["welcome","quiz","result"].forEach(id=>$(id).classList.toggle("hidden",id!==which));window.scrollTo({top:0,behavior:"smooth"})}
+    function renderQuestion(){const item=questions[current];$("stageLabel").textContent=`第 ${current+1} 题`;$ ("progressNum").textContent=`${current+1} / ${questions.length}`;$("progressBar").style.width=`${(current+1)/questions.length*100}%`;$("questionText").textContent=item.q;$("backBtn").disabled=current===0;$("options").innerHTML="";item.a.forEach((choice,i)=>{const b=document.createElement("button");b.className="option";b.innerHTML=`<b>${String.fromCharCode(65+i)}.</b>${choice[0]}`;b.onclick=()=>{answers[current]=i;if(current<questions.length-1){current++;renderQuestion()}else showResult()};$("options").appendChild(b)})}
+    function calculate(){const total=[0,0,0,0],caps=[0,0,0,0];questions.forEach(q=>{for(let i=0;i<4;i++)caps[i]+=Math.max(...q.a.map(a=>a[1][i]))});answers.forEach((ans,qi)=>{if(ans!==null)questions[qi].a[ans][1].forEach((v,i)=>total[i]+=v)});const score=total.map((v,i)=>Math.round(v/caps[i]*100)),person=score.map(v=>v/100);let winner=chars[0],best=Infinity;chars.forEach(c=>{const distance=Math.sqrt(c.p.reduce((s,v,i)=>s+(v-person[i])**2,0));if(distance<best){best=distance;winner=c}});return{score,winner}}
+    function showResult(forced=null){const calc=calculate(),winner=forced||calc.winner;shownWinner=winner;const scores=forced?winner.p.map(v=>Math.round(v*100)):calc.score;$("resultName").textContent=winner.name;$("resultType").textContent=winner.type;$("resultQuote").innerHTML=`${winner.quote}<small>角色风格寄语｜非作品原文台词</small>`;$("resultIntro").textContent=winner.intro;$("scores").innerHTML=dims.map((d,i)=>`<div class="score-row"><span class="score-name">${d}</span><span class="track"><i style="width:${scores[i]}%"></i></span><span class="score-val">${scores[i]}</span></div>`).join("");
+      const high=dims[scores.indexOf(Math.max(...scores))],low=dims[scores.indexOf(Math.min(...scores))],role=high==="共情力"?"照顾同伴、连接彼此的人":high==="冷静度"?"观察局势、找出关键的人":high==="意志力"?"稳定推进、关键时刻不退的人":"率先行动、打开局面的人";
+      const titles=["你的优势","压力下的你","团队中的位置","下一步成长"];
+      const texts=[`你最突出的特点是「${high}」。这往往是你面对新任务时最自然的反应，也是最容易让你获得成就感的部分。它能帮你迈出第一步，也能在遇到变化时给你底气。把这份优势用在重要的事情上，同时允许自己偶尔慢下来，你会走得更稳。`,`压力上来时，你常会依靠「${high}」处理局面：先行动、照顾身边的人、观察清楚再决定，或靠意志把事情做完。这能带你度过难关，但也要留意别过度消耗；先暂停一下，分清轻重缓急，再决定是否需要求助。`,`你在团队里可能是「${role}」。你带来的价值不一定总在聚光灯下：也许是先把事情启动、及时接住伙伴的情绪、看清局势中的关键点，或在大家松劲时把任务推进。合作时，把你的判断和需要都说出来，别人更容易和你形成默契。`,`下一步可以练习「${low}」，把它当成可拓展的技能，而不是给自己贴上的短板标签。可以从一个小动作开始：遇到机会先表达意见、做决定前整理信息、邀请伙伴共同讨论，或为重要目标设定固定练习时间。每完成一点，你的选择空间都会更大。`];
+      $("analysis").innerHTML=texts.map((t,i)=>`<article class="analysis-card"><b>${titles[i]}</b><p>${t}</p></article>`).join("");$("advice").innerHTML=`<strong>本周可以试试：</strong><ul><li>${adviceText[low]}</li><li>继续发挥「${high}」这个强项，不必要求自己每次都做到满分。</li><li>遇到卡住的地方，找一个可信任的人一起复盘，不必独自扛完。</li></ul>`;history.replaceState(null,"",`${location.pathname}?r=${winner.id}`);show("result")}
+    function showShared(id){const c=chars.find(x=>x.id===id);if(c)showResult(c)}
+    $("startBtn").onclick=()=>{current=0;answers=Array(questions.length).fill(null);renderQuestion();show("quiz")};$("backBtn").onclick=()=>{if(current>0){current--;renderQuestion()}};$("quitBtn").onclick=()=>show("welcome");$("againBtn").onclick=()=>{history.replaceState(null,"",location.pathname);current=0;answers=Array(questions.length).fill(null);renderQuestion();show("quiz")};
+    $("shareBtn").onclick=async()=>{const c=shownWinner||calculate().winner,url=`${location.origin}${location.pathname}?r=${c.id}`,data={title:"测测你是《鬼灭之刃》里的谁？",text:`我的测试结果是「${c.name}｜${c.type}」，你也来测测看！`,url};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(`${data.text}\n${url}`);alert("结果链接已复制，发给朋友吧！")}}catch(e){if(e.name!=="AbortError")alert("分享失败了，可以复制浏览器地址栏的链接。")}};
+    const shared=new URLSearchParams(location.search).get("r");if(shared&&chars.some(c=>c.id===shared))showShared(shared);
+  </script>
+</body>
+</html>
